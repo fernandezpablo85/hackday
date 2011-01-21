@@ -1,0 +1,184 @@
+#header, #body, #footer {
+	text-align:left;
+}
+
+#header {
+	background:#EEEEEE none repeat scroll 0 0;
+	border-bottom:1px solid #959595;
+	padding:7px 0;
+	width:100%;
+	height: 30px;
+	-webkit-border-top-left-radius: 5px 5px;
+	-webkit-border-top-right-radius: 5px 5px;
+}
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	color:#000000;
+	font-family:Arial,Helvetica,"Nimbus Sans L",sans-serif;
+	font-size:62.5%;
+	font-size-adjust:none;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.2;
+}
+
+#header .logo {
+	background:transparent url(http://static02.linkedin.com/scds/common/u/img/sprite/sprite_global_v3.png) no-repeat scroll 0 0;
+	display:block;
+	float:left;
+	height:23px;
+	margin-left:5px;
+	text-indent:-12345px;
+	width:88px;
+}
+
+h1 {
+	color:#0079AB;
+	font-size:20px;
+}
+
+#nav-utility {
+	padding-right:10px;
+}
+
+#nav-utility ul {
+	color:#666666;
+	float:right;
+	font-size:11px;
+	line-height:23px;
+	padding-right:5px;
+	text-align:right;
+}
+
+ol, ul {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}
+
+#nav-utility li {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+a {
+	color:#006699;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+	text-decoration:none;
+}
+
+.title {
+	color:#333333;
+	font-size:12px;
+	font-weight:bold;
+	margin-left: 0px;
+	margin-top: 10px;
+}
+
+h3 {
+	color:#333333;
+	font-size:16px;
+}
+
+.meta {
+	color:black;
+	font-size:11px;
+	margin-left: 3px;
+}
+
+.urlContainer
+{
+	background:#E7E6E6 none repeat scroll 0 0;
+	overflow:hidden;
+	padding:10px;
+	height: 40px;
+}
+
+.actions {
+	clear:both;
+	margin:0px 0px 0px 0px;
+	padding:20px 10px 10px 10px;
+	width:auto;
+	font-size:13px;
+	background: #F2F2F2 none repeat scroll 0 0;
+	-webkit-border-bottom-left-radius: 5px 5px;
+	-webkit-border-bottom-right-radius: 5px 5px;
+}
+.actions input {
+line-height:1.35;
+font-size:12px;
+vertical-align:middle;
+
+}
+
+.confirmbtn, .cancel{
+	background-color:#0571A6 !important;
+	background-position:0 -400px;
+	border-color:#045A8B;
+	color:#FFFFFF !important;
+	background-image:url(http://static01.linkedin.com/scds/common/u/img/sprite/sprite_chrome_v3.png);
+	background-repeat:repeat-x;
+	border-style:solid;
+	border-width:1px;
+	cursor:pointer;
+	font-size:12px;
+	line-height:1.35;
+	margin:0;
+	overflow:visible;
+	padding:3px 10px 2px;
+	text-decoration:none !important;
+	vertical-align:top;
+	width:80px;
+	border-bottom-left-radius: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	border-style: solid;
+	border-width: 1px;
+	border-top-left-radius: 3px 3px;
+	border-top-right-radius: 3px 3px;
+	cursor: pointer;
+}
+a.confirmbtn, a.cancel{
+	display:inline-block !important;
+}
+
+.cancel{
+	background-color:#CECECE;
+	background-position:0 -600px;
+	border-color:#999999;
+	color:#666666 !important;
+	width:60px;
+}
+
+#titleContainer, #commentContainer{
+	padding-top: 10px;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+}
+#titleContainer label, #commentContainer label{
+	color: #069;
+	font-size:13px;
+	margin-left: 3px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+#titleContainer input, #commentContainer textarea{
+	color: gray;
+	font-size:13px;
+	margin-left: 3px;
+	margin-top: 5px;
+	width: 97%;
+	padding: 3px;
+}
+#commentContainer textarea{
+	height: 100px;
+}
+
+

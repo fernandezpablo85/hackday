@@ -7,63 +7,41 @@
     onLoad : Extensions.onLoad
   </script>
   <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-  <style>
-  *
-  {
-    font-family: "Ubuntu", arial, serif;
-  }
-  #share-link
-  {
-    display:none;
-  }
-  #title
-  {
-    width:250px;
-    padding:2px;
-    font-size:1em;
-  }
-  #comment
-  {
-    width:250px;
-    height:50px;
-    padding:2px;
-  }
-  #submit
-  {
-    margin:10px 5px 5px 0px;
-    padding:7px;
-  }
-  label
-  {
-    width:238px;
-    border:2px solid #DDD;
-    -webkit-border-radius:5px;
-    padding:5px;
-    background-color:#EFEFEF;
-    color:#069;
-  }
-  label,code,input
-  {
-    display:block;
-  }
-  </style>
+	<link rel="stylesheet" href="Style.css">
 </head>
 <body>
   <script type='IN/Login'>
   </script>
-  <div id='content'>
-  <form id="share-link">
-    <label for='link'>Sharing</label><br/>
-    <code id='link'></code><br/>
-    <label for='title'>Title</label><br/>
-    <input type='text' id='title'/><br/>
-    <label for='comment'>Comment</label><br/>
-    <textarea id='comment' cols='100' rows='10' placeholder='Enter an additional comment here if you want'></textarea>
-    <button id='submit' href='#' onclick='Extensions.share()'>Share</button>
-  </form>
-  <div id='messages'>
-    
-  </div>
-  </div>
+	<div id="header" class="header"> 
+		<h1 class="logo"> LinkedIn</h1>
+		<div id="nav-utility">
+			<ul>
+				<li class="name"> Jairo de Morais </li>
+				<li class="signout"><a href=#>Cerrar session</a> </li>
+			</ul>
+		</div>
+	</div>
+	<form id="share-link">
+		<div id="body">
+			<div class="urlContainer">
+				<h3 id="share-title" class="title">Share News With Your LinkedIn Network</h3>
+				<p class="meta">
+					<code id='link'> www.ole.com.ar/ALLALALA</code>
+				</p>
+			</div>
+			<div id="titleContainer">
+				<label for='title'>Title</label><br/>
+				<input type='text' id='title'/><br/>
+			</div>
+			<div id="commentContainer">
+				<label for='comment'>Comment</label><br/>
+				<textarea id='comment' cols='100' rows='10' placeholder='Enter an additional comment here if you want'></textarea>
+			</div>
+			<p class="actions">
+				<input id="submit" class="confirmbtn" value="Share" />
+				<a class="cancel"> Cancel</a>
+			</p>
+		</div>
+	</form>
 </body>
 </html>
