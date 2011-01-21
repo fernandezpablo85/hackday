@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>LinkedIn</title>
+<script type="text/javascript" src="./js/gmail.js"></script>
+<script type="text/javascript">
+function globalCommandHandler(event) {
+    if (event.command == "LinkedInLogo") {
+        safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("loadconnect", "");
+    }
+}
+safari.application.addEventListener("command", globalCommandHandler, false);
+</script>
+</head>
+<body>
+</body>
+</html>
