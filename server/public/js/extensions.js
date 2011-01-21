@@ -5,5 +5,5 @@ Extensions.onLoad = function () {
 }
 
 Extensions.onAuth = function () {
-	console.log('it works')
+	$(document.body).append('<p>it works!</p>')
 }
