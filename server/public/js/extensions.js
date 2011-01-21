@@ -5,5 +5,7 @@ Extensions.onLoad = function () {
 }
 
 Extensions.onAuth = function () {
-	$(document.body).append('<p>it works!</p>')
+document.getElementById('link').innerText = "document.location.href";
+document.getElementById('title').value = "document.title";
+document.getElementById('share-link').style.display = 'block';
 }
