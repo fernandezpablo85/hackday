@@ -1,0 +1,17 @@
+{
+  "name": "LinkedIn Chrome Share",
+  "version": "1.0",
+  "description": "Share any link you want to your LinkedIn's connections",
+  "browser_action": 
+	{
+    "default_icon": "icons/browser_icon.png",
+		"default_title": "Share with LinkedIn",
+		"popup": "pages/popup.html"
+  },
+  "icons":
+  { 
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png" 
+  }
+}
