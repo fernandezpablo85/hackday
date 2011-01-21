@@ -16,6 +16,32 @@
   {
     display:none;
   }
+  #title
+  {
+    width:250px;
+    padding:2px;
+    font-size:1em;
+  }
+  #comment
+  {
+    width:250px;
+    height:50px;
+    padding:2px;
+  }
+  #submit
+  {
+    margin:10px 5px 5px 0px;
+    padding:7px;
+  }
+  label
+  {
+    width:238px;
+    border:2px solid #DDD;
+    -webkit-border-radius:5px;
+    padding:5px;
+    background-color:#EFEFEF;
+    color:#069;
+  }
   label,code,input
   {
     display:block;
@@ -26,12 +52,12 @@
   <script type='IN/Login'>
   </script>
   <form id="share-link">
-    <label for='link'>Sharing:</label><br/>
+    <label for='link'>Sharing</label><br/>
     <code id='link'></code><br/>
-    <label for='title'>Title:</label><br/>
+    <label for='title'>Title</label><br/>
     <input type='text' id='title'/><br/>
-    <label for='comment'>Comment:</label><br/>
-    <input type='textarea' id='comment' cols='40' rows='10' placeholder='Enter an additional comment here if you want'/>
+    <label for='comment'>Comment</label><br/>
+    <textarea id='comment' cols='100' rows='10' placeholder='Enter an additional comment here if you want'></textarea>
     <button id='submit'>Share</button>
   </form>
 </body>
