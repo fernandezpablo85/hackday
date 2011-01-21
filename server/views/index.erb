@@ -51,6 +51,7 @@
 <body>
   <script type='IN/Login'>
   </script>
+  <div id='content'>
   <form id="share-link">
     <label for='link'>Sharing</label><br/>
     <code id='link'></code><br/>
@@ -58,7 +59,11 @@
     <input type='text' id='title'/><br/>
     <label for='comment'>Comment</label><br/>
     <textarea id='comment' cols='100' rows='10' placeholder='Enter an additional comment here if you want'></textarea>
-    <button id='submit'>Share</button>
+    <button id='submit' href='#' onclick='Extensions.share()'>Share</button>
   </form>
+  <div id='messages'>
+    
+  </div>
+  </div>
 </body>
 </html>
