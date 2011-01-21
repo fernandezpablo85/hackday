@@ -5,8 +5,9 @@ Extensions.onLoad = function () {
 }
 
 Extensions.onAuth = function () {
-	document.getElementById('link').innerText = "http://example.com";
-	document.getElementById('title').value = "document.title";
+	var matches = location.search.match(/url=(.*)&title=(.*)/);
+	document.getElementById('link').innerText = decodeURIComponent(matches[1]);
+	document.getElementById('title').value = decodeURIComponent(matches[2]);
 	document.getElementById('share-link').style.display = 'block';
 }
 

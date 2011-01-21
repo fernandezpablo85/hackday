@@ -1,1 +1,10 @@
-<iframe style="border: none; height: 350px" src="http://localhost:4567"></iframe>
+<iframe id="content"></iframe>
+<script>
+chrome.tabs.getSelected(null, function (tab) {
+  var tabUrl = encodeURIComponent(tab.url);
+  var tabTitle = encodeURIComponent(tab.title);
+  document.getElementById("content").style.border = "none"; 
+  document.getElementById("content").style.height = "350px";
+  document.getElementById("content").src = "http://localhost:4567?url=" + tabUrl + "&title=" + tabTitle;
+});
+</script>
