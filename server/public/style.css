@@ -180,5 +180,12 @@ a.confirmbtn, a.cancel{
 #commentContainer textarea{
 	height: 100px;
 }
-
+.messageContainer{
+	padding-top: 10px;
+}
+.messageContainer p{
+	font-size:13px;
+	margin-left: 3px;
+	margin-top: 5px;
+}
 

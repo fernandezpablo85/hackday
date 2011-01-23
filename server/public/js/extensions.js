@@ -25,14 +25,20 @@ Extensions.share = function() {
 		.error(Extensions.callbacks.shareError);
 }
 
+Extensions.closePopup = function () {
+	parent.close();	
+}
+
 Extensions.callbacks = {};
 
 Extensions.callbacks.shareOk = function (response) {
+	setTimeout("parent.close()", 2000);
 	document.getElementById('share-link').style.display = 'none';
-	document.getElementById('messages').innerText = 'Link shared! :)';
+	document.getElementById('messages').innerHTML = '<p>Link shared! :)</p>';
 }
 
 Extensions.callbacks.shareError = function (response) {
+	setTimeout("parent.close()", 2000);
 	document.getElementById('share-link').style.display = 'none';
-	document.getElementById('messages').innerText = 'There were problems sharing this link. Try again later :(';
+	document.getElementById('messages').innerHTML = '<p>Could not share link</p>';
 }
