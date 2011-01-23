@@ -6,9 +6,11 @@ Extensions.onLoad = function () {
 
 Extensions.onAuth = function () {
 	var matches = location.search.match(/url=(.*)&title=(.*)/);
-	document.getElementById('link').innerText = decodeURIComponent(matches[1]);
+	var fullUrl = decodeURIComponent(matches[1]);
+	document.getElementById('link').innerText = fullUrl;
 	document.getElementById('title').value = decodeURIComponent(matches[2]);
 	document.getElementById('share-link').style.display = 'block';
+	document.getElementById('link-display').innerText = fullUrl.substring(0,30) + "..."
 }
 
 Extensions.share = function() {

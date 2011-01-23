@@ -27,7 +27,8 @@
 			<div class="urlContainer">
 				<h3 id="share-title" class="title">Share News With Your LinkedIn Network</h3>
 				<p class="meta">
-					<code id='link'> www.ole.com.ar/ALLALALA</code>
+					<code id='link' style='display:none'></code>
+					<code id='link-display'></code>
 				</p>
 			</div>
 			<div id="titleContainer">
@@ -39,7 +40,7 @@
 				<textarea id='comment' cols='100' rows='10' placeholder='Enter an additional comment here if you want'></textarea>
 			</div>
 			<p class="actions">
-				<input id="submit" class="confirmbtn" value="Share" onclick="Extensions.share();return false;"/>
+				<input id="submit" type="button" class="confirmbtn" value="Share" onclick="Extensions.share();return false;"/>
 				<a class="cancel" onclick="Extensions.closePopup();return false;"> Cancel</a>
 			</p>
 		</div>
