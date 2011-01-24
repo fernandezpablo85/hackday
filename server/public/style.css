@@ -1,5 +1,14 @@
+#container
+{
+	display:none;
+}
+
 #header, #body, #footer {
 	text-align:left;
+}
+
+#body {
+	background-color:#E7E6E6;
 }
 
 #header {

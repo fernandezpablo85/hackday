@@ -2,15 +2,15 @@ var Extensions = Extensions || {};
 
 Extensions.onLoad = function () {
 	IN.Event.on(IN, 'auth', Extensions.onAuth);
+	window.addEventListener("message", Extensions.receiveMessage, false);
 }
 
 Extensions.onAuth = function (result) {
-	console.log(result.toString());
 	var matches = location.search.match(/url=(.*)&title=(.*)/);
 	var fullUrl = decodeURIComponent(matches[1]);
 	document.getElementById('link').innerText = fullUrl;
 	document.getElementById('title').value = decodeURIComponent(matches[2]);
-	document.getElementById('share-link').style.display = 'block';
+	document.getElementById('container').style.display = 'block';
 	document.getElementById('link-display').innerText = fullUrl.substring(0,30) + "...";
 	IN.API.Profile("me").result(Extensions.callbacks.getProfile);
 }
@@ -38,6 +38,8 @@ Extensions.logout = function() {
 	document.getElementById('header').style.display = 'none';
 	IN.User.logout();
 }
+
+Extensions.receiveMessage = function (message) {}
 
 Extensions.callbacks = {};
 
