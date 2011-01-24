@@ -30,7 +30,12 @@ Extensions.share = function() {
 }
 
 Extensions.closePopup = function () {
-	parent.close();	
+	if(~window.navigator.userAgent.indexOf('Chrome')) {
+		parent.close();			
+	} else {
+		window.close();
+	}
+
 }
 
 Extensions.logout = function() {
